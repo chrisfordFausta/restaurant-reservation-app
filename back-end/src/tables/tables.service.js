@@ -37,7 +37,7 @@ function read(table_id) {
   */ 
 function update(reservation_id, table_id) {
   return knex.transaction((trx) => {
-    return knex(tableName)
+    return trx(tableName)
       .where({ table_id: table_id })
       .update({ reservation_id }, "*")
       .then((updatedTable) => updatedTable[0])
