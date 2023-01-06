@@ -100,6 +100,7 @@ function hasValidDate(req, res, next) {
     console.log("100 formattedDate:", formattedDate);
     console.log("101 new Date():", new Date());
     console.log("102 new formattedDate:", new Date(`${data.reservation_date}T${data.reservation_time}`))
+    console.log("103 new formattedDate:", new Date(`${data.reservation_date}T${data.reservation_time}-06:00`))
     return next({
       status: 400,
       message: `Reservation must be in the future`,
