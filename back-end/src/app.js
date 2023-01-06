@@ -15,8 +15,8 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const router = express.Router()
-router.get('/', cors(), (req, res) => {
+
+app.get('/', (req, res) => {
     res.json({
         message: "Welcome you can access the data in the back end"
     })
