@@ -33,7 +33,7 @@ function ReservationForm ({ reservation, changeHandler, submitHandler }) {
                     <input
                         id="mobile_number"
                         name="mobile_number"
-                        type="tel"
+                        type="text"
                         pattern="[0-9\-]+"
                         placeholder="123-456-7890"
                         value={reservation.mobile_number}
