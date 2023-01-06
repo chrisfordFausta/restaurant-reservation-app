@@ -33,7 +33,8 @@ function ReservationForm ({ reservation, changeHandler, submitHandler }) {
                     <input
                         id="mobile_number"
                         name="mobile_number"
-                        type="text"
+                        type="tel"
+                        pattern="[0-9\-]+"
                         value={reservation.mobile_number}
                         onChange={changeHandler}
                         required={true}
