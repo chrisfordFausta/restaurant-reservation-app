@@ -72,7 +72,7 @@ function ReservationForm ({ reservation, changeHandler, submitHandler }) {
                     <input  
                         id="people"
                         name="people"
-                        type="number"
+                        type="text"
                         min={1}
                         value={reservation.people}
                         onChange={changeHandler}
