@@ -72,7 +72,8 @@ function ReservationForm ({ reservation, changeHandler, submitHandler }) {
                     <input  
                         id="people"
                         name="people"
-                        type="text"
+                        type="number"
+                        min={1}
                         value={reservation.people}
                         onChange={changeHandler}
                         required={true}
